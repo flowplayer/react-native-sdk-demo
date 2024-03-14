@@ -66,8 +66,16 @@ PODS:
   - FlipperKit/SKIOSNetworkPlugin (0.201.0):
     - FlipperKit/Core
     - FlipperKit/FlipperKitNetworkPlugin
+  - Flowplayer (1.0.0-rc.3):
+    - FlowplayerSDK (~> 4.6.3)
+    - glog
+    - GoogleAds-IMA-iOS-SDK (~> 3.19.1)
+    - RCT-Folly (= 2022.05.16.00)
+    - React-Core
+  - FlowplayerSDK (4.6.3)
   - fmt (6.2.1)
   - glog (0.3.5)
+  - GoogleAds-IMA-iOS-SDK (3.19.2)
   - hermes-engine (0.73.6):
     - hermes-engine/Pre-built (= 0.73.6)
   - hermes-engine/Pre-built (0.73.6)
@@ -1139,6 +1147,7 @@ DEPENDENCIES:
   - FlipperKit/FlipperKitReactPlugin (= 0.201.0)
   - FlipperKit/FlipperKitUserDefaultsPlugin (= 0.201.0)
   - FlipperKit/SKIOSNetworkPlugin (= 0.201.0)
+  - "Flowplayer (from `../node_modules/@flowplayer/react-native-sdk`)"
   - glog (from `../node_modules/react-native/third-party-podspecs/glog.podspec`)
   - hermes-engine (from `../node_modules/react-native/sdks/hermes-engine/hermes-engine.podspec`)
   - libevent (~> 2.1.12)
@@ -1200,7 +1209,9 @@ SPEC REPOS:
     - Flipper-Glog
     - Flipper-PeerTalk
     - FlipperKit
+    - FlowplayerSDK
     - fmt
+    - GoogleAds-IMA-iOS-SDK
     - libevent
     - OpenSSL-Universal
     - SocketRocket
@@ -1214,6 +1225,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/Libraries/FBLazyVector"
   FBReactNativeSpec:
     :path: "../node_modules/react-native/React/FBReactNativeSpec"
+  Flowplayer:
+    :path: "../node_modules/@flowplayer/react-native-sdk"
   glog:
     :podspec: "../node_modules/react-native/third-party-podspecs/glog.podspec"
   hermes-engine:
@@ -1318,8 +1331,11 @@ SPEC CHECKSUMS:
   Flipper-Glog: 70c50ce58ddaf67dc35180db05f191692570f446
   Flipper-PeerTalk: 116d8f857dc6ef55c7a5a75ea3ceaafe878aadc9
   FlipperKit: 37525a5d056ef9b93d1578e04bc3ea1de940094f
+  Flowplayer: 5c201fa5cc8246a9edec26eb00122095cedfc59f
+  FlowplayerSDK: 55bbaf49020a43de8d30490e0b03e42747bac2cb
   fmt: ff9d55029c625d3757ed641535fd4a75fedc7ce9
   glog: c5d68082e772fa1c511173d6b30a9de2c05a69a2
+  GoogleAds-IMA-iOS-SDK: 0e817c05ab26f1b9285c80f4a75e1350a916d50b
   hermes-engine: 9cecf9953a681df7556b8cc9c74905de8f3293c0
   libevent: 4049cae6c81cdb3654a443be001fb9bdceff7913
   OpenSSL-Universal: ebc357f1e6bc71fa463ccb2fe676756aff50e88c
@@ -1367,6 +1383,6 @@ SPEC CHECKSUMS:
   SocketRocket: f32cd54efbe0f095c4d7594881e52619cfe80b17
   Yoga: 805bf71192903b20fc14babe48080582fee65a80
 
-PODFILE CHECKSUM: f0072bebd6f25772a5b89743c989a969751a2149
+PODFILE CHECKSUM: 16ce4d75e174dc5b840fd11a74c23b900cbb1349
 
-COCOAPODS: 1.14.3
+COCOAPODS: 1.14.2

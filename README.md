@@ -58,7 +58,7 @@ Working with our React Native SDK library requires:
 
 If you need some help setting up your environment, we recommend this [React Native CLI Quickstart](https://reactnative.dev/docs/environment-setup?guide=native). Once you select your **Development OS** and **Target OS** in the the React Native CLI Quickstart, you can see the required dependencies to work with the Wowza Flowplayer React Native SDK.
 
-## Setup Dependencies
+### Set up dependencies
 
 1. Install `package.json` dependencies
 
@@ -82,6 +82,10 @@ bundle exec pod install # Install iOS Depenendecies
 
 To allow the player to display content in your iOS or Android application, you have to set an access token. For platform-specific instructions, see [Set an access token](http://developer.wowza.com/docs/wowza-flowplayer/react-native-sdk/get-started/#set-an-access-token).
 
+### Load media files
+
+After you set an access token, update the media constants in the [App.tsx](https://github.com/flowplayer/react-native-sdk-demo/blob/main/src/App.tsx) file to reflect the Wowza media or remote files you'd like to load in the demo application.
+
 ### Run the demo application
 
 ```bash
@@ -90,7 +94,7 @@ npm start
 yarn start
 ```
 
-### Use the SDK
+## Use the SDK
 
 To learn how to import and use the player component, see the following pages in our official documentation:
 

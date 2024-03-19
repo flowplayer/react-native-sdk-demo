@@ -10,8 +10,8 @@ See our official [Wowza Flowplayer React Native SDK](https://developer.wowza.com
 
 The Wowza Flowplayer React Native SDK currently supports these platforms:
 
-* Android 4.4+ (API level 19+)
-* iOS 14.0+ and iPadOS 14.0+
+- Android 4.4+ (API level 19+)
+- iOS 14.0+ and iPadOS 14.0+
 
 There's no current support for TV platforms, such as tvOS and Android TV.
 
@@ -25,21 +25,21 @@ Before you start with the latest version of the Wowza Flowplayer React Native SD
 
 ### For iOS
 
-| Requirement | Version information |
-| :----- | :----- |
-| **Supported platforms** | OS 14.0+, iPadOS 14.0+ |
-| **Minimum system requirements** | Swift 5.7+, macOS 13.0+ |
-| **Software requirements** | [Xcode 15](https://developer.apple.com/download/all/?q=xcode) and later |
+| Requirement                     | Version information                                                     |
+| :------------------------------ | :---------------------------------------------------------------------- |
+| **Supported platforms**         | OS 14.0+, iPadOS 14.0+                                                  |
+| **Minimum system requirements** | Swift 5.7+, macOS 13.0+                                                 |
+| **Software requirements**       | [Xcode 15](https://developer.apple.com/download/all/?q=xcode) and later |
 
 For more, see [About the Apple SDK > Before you start](https://developer.wowza.com/docs/wowza-flowplayer/apple-sdk/about-the-apple-sdk/#before-you-start).
 
 ### For Android
 
-| Requirement | Version information |
-| :----- | :----- |
-| **Supported platforms** | Android 4.4+ (API level 19+) |
-| **Minimum system requirements** | Java 8+, Kotlin 1.9 |
-| **Software requirements** | [Android Studio Giraffe](https://developer.android.com/studio) |
+| Requirement                     | Version information                                            |
+| :------------------------------ | :------------------------------------------------------------- |
+| **Supported platforms**         | Android 4.4+ (API level 19+)                                   |
+| **Minimum system requirements** | Java 8+, Kotlin 1.9                                            |
+| **Software requirements**       | [Android Studio Giraffe](https://developer.android.com/studio) |
 
 For more, see [About the Android SDK > Before you start](https://developer.wowza.com/docs/wowza-flowplayer/android-sdk/about-the-android-sdk/#before-you-start).
 
@@ -51,10 +51,10 @@ Before you can get started with the SDK, you must set up your development enviro
 
 Working with our React Native SDK library requires:
 
-* At least React Native version `0.72.x` and React version `v18.2.x.`
-* Node `20` or later for all target operating systems.
-* The Java Development Kit (JDK) and at least Java `8` for the Android installation.
-* CocoaPods version `1.14` or later for the iOS installation.
+- At least React Native version `0.72.x` and React version `v18.2.x.`
+- Node `20` or later for all target operating systems.
+- The Java Development Kit (JDK) and at least Java `8` for the Android installation.
+- CocoaPods version `1.14` or later for the iOS installation.
 
 If you need some help setting up your environment, we recommend this [React Native CLI Quickstart](https://reactnative.dev/docs/environment-setup?guide=native). Once you select your **Development OS** and **Target OS** in the the React Native CLI Quickstart, you can see the required dependencies to work with the Wowza Flowplayer React Native SDK.
 
@@ -86,6 +86,14 @@ To allow the player to display content in your iOS or Android application, you h
 
 After you set an access token, update the media constants in the [App.tsx](https://github.com/flowplayer/react-native-sdk-demo/blob/main/src/App.tsx) file to reflect the Wowza media or remote files you'd like to load in the demo application.
 
+```javascript
+// App.tsx
+const MEDIA_WOWZA: FlowplayerMedia = {
+  mediaId: "<MEDIA_ID>",
+  playerId: "<PLAYER_ID>",
+};
+```
+
 ### Run the demo application
 
 ```bash
@@ -98,9 +106,9 @@ yarn start
 
 To learn how to import and use the player component, see the following pages in our official documentation:
 
-* [Set up the player with the React Native SDK](http://developer.wowza.com/docs/wowza-flowplayer/react-native-sdk/set-up-the-player/)
-* [Listen for events with the React Native SDK](http://developer.wowza.com/docs/wowza-flowplayer/react-native-sdk/listen-for-events/)
-* [Manage the player with the React Native SDK](http://developer.wowza.com/docs/wowza-flowplayer/react-native-sdk/manage-the-player/)
+- [Set up the player with the React Native SDK](http://developer.wowza.com/docs/wowza-flowplayer/react-native-sdk/set-up-the-player/)
+- [Listen for events with the React Native SDK](http://developer.wowza.com/docs/wowza-flowplayer/react-native-sdk/listen-for-events/)
+- [Manage the player with the React Native SDK](http://developer.wowza.com/docs/wowza-flowplayer/react-native-sdk/manage-the-player/)
 
 ## Support
 

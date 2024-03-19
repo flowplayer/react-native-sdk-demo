@@ -240,10 +240,10 @@ const PlayerView = () => {
 
   const onViewReady = () => {
     // Load media when the view loads.
+
     // flowplayerRef.current?.prepare(MEDIA_REMOTE);
     // flowplayerRef.current?.setAutoplay(true);
-    // flowplayerRef.current?.setPlaybackRate(2.0);
-    console.log("dispatch", dispatch);
+
     dispatch?.prepare?.(MEDIA_REMOTE);
     dispatch?.setAutoplay?.(true);
   };

@@ -20,9 +20,9 @@
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
-      <meta-data
-        android:name="com.flowplayer.accessToken"
-        android:value="my_flowplayer_access_token" />
     </activity>
+    <meta-data
+      android:name="com.flowplayer.accessToken"
+      android:value="my_access_token" />
   </application>
 </manifest>

@@ -1,6 +1,6 @@
 import React, {useMemo} from "react";
 import {useRef} from "react";
-import {Button, FlatList, StyleSheet, Text, View} from "react-native";
+import {Button, FlatList, Platform, StyleSheet, Text, View} from "react-native";
 
 import FlowplayerView, {
   FlowplayerProvider,
@@ -38,18 +38,20 @@ const Styles = StyleSheet.create({
   },
   stateListItem: {
     display: "flex",
-    flexDirection: "row",
-    padding: 10,
-    columnGap: 10,
-    justifyContent: "space-evenly",
+    flexDirection: "column",
+    padding: 4,
+    rowGap: 8,
+    justifyContent: "center",
+    alignItems: "center",
   },
   stateListText: {
-    fontFamily: "Courier New",
-    fontWeight: "bold",
+    fontFamily: Platform.OS === "ios" ? "Courier New" : "monospace",
     textAlign: "left",
+    fontSize: 14,
   },
   stateListTextKey: {
-    fontWeight: "500",
+    fontWeight: "bold",
+    fontSize: 15,
   },
 });
 
